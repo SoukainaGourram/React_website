@@ -1,14 +1,11 @@
 import React from 'react';
-import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
-import './NavBar.css';
-
 
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
+      <img src='/images/img-home.jpg'  alt='Adventure Awaits' className='hero-image' />
       <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
@@ -23,7 +20,7 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
-          onClick={console.log('hey')}
+          onClick={() => console.log('Watch trailer clicked')}
         >
           WATCH TRAILER <i className='far fa-play-circle' />
         </Button>
